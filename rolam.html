@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Józsa Dániel Portfóliója</title>
+    <link rel="stylesheet" href="css/stylerolam.css">
+</head>
+
+<body>
+    <div class="kontener">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                <img src="images/iconmenu.svg" alt="menü" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile lecci" id="nav">
+                    <li id="exit" class="exit-button hide-desktop"><img src="images/vissza.svg" alt="exit" class="exit"></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="rolam.html">Rólam</a></li>
+                    <li><a href="szabadidom.html">Szabadidőm</a></li>
+                    <li><a href="munkaim.html">Munkáim</a></li>
+                </ul>
+            </nav>
+            <img src="images/mogi.png" alt="mogi" class="mogilogo">
+        </header>
+
+        <section>
+            <img src="images/muegyetem_logo_nagy.png" alt="BME logo" class="bme">
+            <h1>Rólam
+            </h1>
+        </section>
+    </div>
+
+    <div class="kontszines">
+        <div class="kontener">
+            <ul class="rolam">
+               <li><p class="ideiglenes">Józsa Dániel vagyok, a Budapesti Műszaki- és Gazdaságtudományi Egyetem 
+                    első éves gépészmérnök hallgatja. Már általános iskola óta tudom, 
+                    hogy gépészmérnök szeretnék lenni, ezért szakgimnáziumba jelentkeztem, ahol a szakmai 
+                    gyakorlataimat külföldön végeztem, remélem a BME is sok újat tartogat a számomra.
+                </p>
+                </li>
+                <li><img src="images/portre.jpg" alt="portré" class="portre"></li>
+            </ul>
+            <ul class="rolam2">
+                <li><img src="images/erasmus.jpg" alt="erasmus+" class="erasmus"></li>
+                <li><p>A középiskolában is aktív tagja voltam a közösségnek, kétszer is részt vettem Erasmus+ projekten.
+                    Ezeken a projekteken középiskolás diákok dolgoznak együtt szerte európából az egy hetes 
+                    konferenciákon, amelyeket mindig más országban rendeznek.
+                    A két projekt témája amelyen résztvettem az emigráció és az "Europe-Radio" volt.
+                </p></li>
+            </ul>
+            <ul class="rolam">
+                <li><p>Kecskeméten születtem, a város szélén kertvárosban nőttem fel, ezért a pesti zsúfoltságot 
+                    nem kifejezetten szeretem. Állatbarát vagyok, van három macskánk és két kutyánk, egy labrador-németjuhász keverkék 
+                    és egy amerikai staffordshire terrier.
+                    </p></li>
+                    <li><img src="images/odin1.png" alt="Am.staff." class="odin">
+                        <img src="images/blacky.jpg" alt="kutya macska" class="blacky"></li>
+                    
+            </ul>
+        </div>
+    </div>
+
+    <div class="izekontener">
+        <div class="kontener">
+            <figure>
+            <blockquote>"A mennyország egy tündérmese azoknak, akik félnek a sötéttől."</blockquote>
+                <figcaption>-  Stephen Hawking</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-kontener">
+            <div class="kontener">
+             <div class="also">
+              <p class="bal">E-mail: jozsa.dani@gmail.com<br>Tel.: +36304895732</p>
+              <p class="nev">Józsa Dániel</p>
+              <p class=jobb>Facebook: Józsa Dániel<br>Instagram: jozsa_dani</p>
+             </div>   
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+    </script>
+
+    
+</body>
+</html>

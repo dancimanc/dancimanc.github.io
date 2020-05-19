@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+p, blockquote{
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+}
+
+.kontener{
+    text-align: center;
+    padding: 0.8em 0.8em;
+}
+
+.mogilogo{
+      height: 120px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 40px;
+    margin-top: 45%;
+}
+.bme{
+    width: 70%;
+}
+section{
+    width: 70;
+    margin: 2em auto 2em ;
+}
+
+h1{
+    position: relative;
+    z-index: 3;
+    font-size: 3em;
+}
+
+.kaveicon{
+    width: 15%;
+}
+.contacticon{
+    width: 15%;
+}
+
+.kontszines{
+    width: 100%;
+    background: rgb(165, 116, 60);
+    padding: 4em 0 2em;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+
+}
+
+.kontszines:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: rgb(165, 116, 60);
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+.kontszines:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
+.kontszines ul{
+    transform: skewY(2deg);
+}
+
+.kontszines ul li{
+    margin-bottom: 3em;
+}
+
+.kontszines ul li p{
+    padding: 0 0.1em;
+}
+
+.izekontener{
+    background-color: #fff;
+    padding: 3em 0 3em;
+    margin-top: -10%;
+    z-index: -3;
+}
+
+blockquote{
+    padding: 0;
+    margin: 0;
+}
+figure{
+    margin: 0;
+    padding: 0;
+    margin-top: 15%;
+
+}
+
+figcaption{
+    font-size: 0.9em;
+    margin-top: 4%;
+    padding-left: 30%;
+}
+
+.footer-kontener{
+    width: 100%;
+    background-color: #3d444a;
+    color: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.also{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6em;
+    
+}
+.nev{
+    text-align: left;
+}
+.jobb{
+    text-align: left;
+    right: 0;
+}
+.bal{
+    text-align: left;
+    left: 0;
+}
+
+
+nav ul{
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    text-align: right;
+    background: rgb(81, 110, 128);
+    padding-top: 1.5em;
+
+}
+.exit{
+    width: 20px;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+}
+
+.exit-button{
+    text-align: left;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    padding-right: 2em;
+    margin-left:-3em;
+    background-color: rgb(94, 128, 150);
+}
+
+nav ul li a:hover{
+    background-color: rgb(107, 145, 170);
+}
+
+@media only screen and (min-width: 650px){
+
+h1{
+    font-size: 3em;
+}
+
+.kaveicon{ width: 16%;}
+.contacticon{ width: 17%;}
+
+p{font-size: 1.2em;}
+
+blockquote{ font-size: 1.2em;}
+
+figcaption{font-size: 1.3em;}
+
+.also{font-size: 0.8em;}
+
+}
+
+@media only screen and (min-width: 875px){
+
+    h1{
+        font-size: 3.2em;
+    }
+    
+    .kaveicon{ width: 13%;}
+    .contacticon{ width: 14%;}
+    
+    p{font-size: 1.3em;}
+    
+    blockquote{ font-size: 1.5em;}
+    
+    figcaption{font-size: 1.6em;}
+    
+    .also{font-size: 0.9em;}
+    
+    }
+
+    @media only screen and (min-width: 1024px){
+
+        h1{
+            font-size: 3.5em;
+        }
+        
+        .kaveicon{ width: 10%;}
+        .contacticon{ width: 11%;}
+        
+        p{font-size: 1.4em;}
+        
+        blockquote{ font-size: 1.7em;}
+        
+        figcaption{font-size: 1.75em;}
+        
+        .also{font-size: 1em;}
+
+        .kontener{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .show-desktop{
+            display: block;
+            margin: 0 auto 13% auto;
+            width: 40%;
+        }
+
+        .hide-desktop{
+            display: none;
+        }
+
+        .lecci{
+            position: inherit;
+            width: auto;
+            background: none;
+            height: auto;
+            padding-top: 0.5em;
+            display: flex;
+            margin-left: -50px;
+        }
+
+        nav ul li{
+           float: left; 
+        }
+
+        nav ul li a{
+            color: black;
+            background: none;
+            font-size: 1.2em;
+            margin-left: 10%;
+            text-align: left;
+            
+        }
+        nav ul li a:hover{background: none;}
+
+        }
+
+        

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Józsa Dániel Portfóliója</title>
+    <link rel="stylesheet" href="css/styleszabad.css">
+</head>
+
+<body>
+    <div class="kontener">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                <img src="images/iconmenu.svg" alt="menü" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile lecci" id="nav">
+                    <li id="exit" class="exit-button hide-desktop"><img src="images/vissza.svg" alt="exit" class="exit"></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="rolam.html">Rólam</a></li>
+                    <li><a href="szabadidom.html">Szabadidőm</a></li>
+                    <li><a href="munkaim.html">Munkáim</a></li>
+                </ul>
+            </nav>
+            <img src="images/mogi.png" alt="mogi" class="mogilogo">
+        </header>
+
+        <section>
+            <img src="images/muegyetem_logo_nagy.png" alt="BME logo" class="bme">
+            <h1>Szabadidőm</h1>
+        </section>
+    </div>
+
+    <div class="kontszines">
+        <div class="kontener">
+            <ul>
+                <li><p>Hobbiként elkezdtem újhullámos kávékkal foglalkozni és most az egyetem mellet 
+                    A ByBeans Specialty Coffee-ban dolgozom baristaként.
+                     </p>
+                </li>
+                <li class="space"><img src="images/hattyu.jpg" alt="kávé" class="hattyu"> 
+                    <img src="images/kave.jpg" alt="coldbrewtonic" class="kvtonic"></li>
+            </ul>
+            <ul class="flex">
+                <li>
+                <p class="le">Szeretek sportolni, nagyon sok félét kipróbáltam már. 
+                    Rugbyztem válogatottban két évig,
+                    de sajnos abba kellett hagyjam. Szoktam futni, biciklizni, teniszezni, túrázni, síelni 
+                    és súllyal ill. saját testsúllyal edzeni.
+                </p></li>
+                <li>
+                <img src="images/bicikli.jpeg" alt="Biciklizés" class="bicikli">
+                </li>
+            </ul>
+            <ul>
+                <li><img src="images/csapatkep.jpeg" alt="KARC" class="csapatkep">
+            </ul>
+        </div>
+    </div>
+
+    <div class="izekontener">
+        <div class="kontener">
+            <figure>
+            <blockquote>"A mennyország egy tündérmese azoknak, akik félnek a sötéttől."</blockquote>
+                <figcaption>-  Stephen Hawking</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-kontener">
+            <div class="kontener">
+             <div class="also">
+              <p class="bal">E-mail: jozsa.dani@gmail.com<br>Tel.: +36304895732</p>
+              <p class="nev">Józsa Dániel</p>
+              <p class=jobb>Facebook: Józsa Dániel<br>Instagram: jozsa_dani</p>
+             </div>   
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+    </script>
+
+    
+</body>
+</html>

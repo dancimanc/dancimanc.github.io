@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Józsa Dániel Portfóliója</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="kontener">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                <img src="images/iconmenu.svg" alt="menü" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile lecci" id="nav">
+                    <li id="exit" class="exit-button hide-desktop"><img src="images/vissza.svg" alt="exit" class="exit"></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="rolam.html">Rólam</a></li>
+                    <li><a href="szabadidom.html">Szabadidőm</a></li>
+                    <li><a href="munkaim.html">Munkáim</a></li>
+                </ul>
+            </nav>
+            <img src="images/mogi.png" alt="mogi" class="mogilogo">
+        </header>
+
+        <section>
+            <img src="images/muegyetem_logo_nagy.png" alt="BME logo" class="bme">
+            <h1>Portfólió</h1>
+        </section>
+    </div>
+
+    <div class="kontszines">
+        <div class="kontener">
+            <ul>
+                <li><img src="images/kaveicon.svg" alt="kávégép" class="kaveicon">
+                <p>Józsa Dániel vagyok, ez a weblap a HTML és CSS programozás alapjainak elsajátítására 
+                    szolgál, a Gépészeti Informatika tárgy egyik házifeladatának keretei közt.
+                     </p>
+                </li>
+                <li><img src="images/contacticon.svg" alt="kontakt" class="contacticon">
+                <p>Elérhetőségeim az oldalak alján megtalálható, tovább rólam a többi menüpontban olvashatsz.</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="izekontener">
+        <div class="kontener">
+            <figure>
+            <blockquote>"A mennyország egy tündérmese azoknak, akik félnek a sötéttől."</blockquote>
+                <figcaption>-  Stephen Hawking</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-kontener">
+            <div class="kontener">
+             <div class="also">
+              <p class="bal">E-mail: jozsa.dani@gmail.com<br>Tel.: +36304895732</p>
+              <p class="nev">Józsa Dániel</p>
+              <p class=jobb>Facebook: Józsa Dániel<br>Instagram: jozsa_dani</p>
+             </div>   
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+    </script>
+
+    
+</body>
+</html>
